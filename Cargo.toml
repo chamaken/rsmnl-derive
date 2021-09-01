@@ -1,0 +1,18 @@
+[package]
+name = "rsmnl-derive"
+version = "0.1.0"
+authors = ["Ken-ichirou MATSUZAWA <chamas@h4.dion.ne.jp>"]
+repository = "https://github.com/chamaken/rsmnl-derive"
+keywords = ["netlink", "netfilter", "rsmnl"]
+license-file = "COPYING"
+readme = "README.md"
+description = "procedural macro for rsmnl"
+
+
+[lib]
+proc_macro = true
+
+[dependencies]
+proc-macro2 = "1.0.29"
+quote = "1.0.9"
+syn = { version = "1.0.75", features = ["full", "extra-traits"] }
